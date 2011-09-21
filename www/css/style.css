@@ -50,11 +50,6 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
    Links
    ========================================================================== */
 
-a { color: #00e; }
-a:visited { color: #551a8b; }
-a:hover { color: #06e; }
-a:focus { outline: thin dotted; }
-
 /* Improve readability when focused and hovered in all browsers: h5bp.com/h */
 a:hover, a:active { outline: 0; }
 
@@ -216,10 +211,14 @@ td { vertical-align: top; }
  * Andys work starts here
  *
  */
+a {
+	color: #000000;
+}
+
 header {
 	background-color: #EFEFEF;
 	width: 400px;
-	height: 85px;
+	height: 95px;
 	border-bottom-right-radius: 15px;
 	border-bottom-left-radius: 15px;
 	margin-left: auto;
@@ -236,17 +235,25 @@ header div {
 #main {
 	width: 100%;
 	position: absolute;
-	top: 25%;
+	top: 35%;
 }
 
 #tstamp {
 	font-size: 50px;
 	font-weight: bold;
 	width: 350px;
+	background-color: #FFFFFF;
+	border-radius: 15px;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	z-index: 10;
+}
+
+#background {
+	display: none;
+	padding: 15px;
+}
 
 /**
  * Andys work ends here
