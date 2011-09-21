@@ -1,0 +1,9 @@
+* Implement .htaccess file
+* Test this page on mobile devices (have a look at mobile viewport metatag)
+* Create favicon.ico and place in /
+* Create apple-touch-icon.png and place in /
+* Read h5bp.com/d/head-Tips
+* Need Modernizr? i don`t know. Have look at custom www.modernizr.com/download/
+* Need JQuery? Try to extract necessary things
+* Implement a <meta description>
+* Implement a README

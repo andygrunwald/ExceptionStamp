@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>ExceptionStamp - Usage of a UNIX timestamp for &bdquo;unique&rdquo; exception codes!</title>
+	<meta name="description" content="">
+	<meta name="author" content="Andy Grunwald">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="container">
+		<header>
+			<div>
+				<h2>What?</h2>
+				A client side <a href="http://en.wikipedia.org/wiki/Unix_time" title="UNIX timestamp description at Wikipedia">UNIX timestamp</a>.
+			</div>
+			<div>
+				<h2>Why?</h2>
+				For &bdquo;unique&rdquo; <a href="http://buzz.typo3.org/people/robert-lemke/article/exceptional-usefulness/" title="Concept of &bdquo;unique&rdquo; exception codes in TYPO3 / FLOW3 project">exception codes</a>.
+			</div>
+		</header>
+		<div id="main" role="main">
+			<div id="tstamp"></div>
+		</div>
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.4.min.js"><\/script>')</script>
+
+	<script defer src="js/ExceptionStamp.js"></script>
+</body>
+</html>
