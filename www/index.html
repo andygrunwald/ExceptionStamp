@@ -9,8 +9,10 @@
 	<meta name="author" content="Andy Grunwald, andygrunwald.com">
 
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-
+	<!-- CSS concatenated and minified via ant build script-->
 	<link rel="stylesheet" href="css/style.css">
+	<!-- end CSS-->
+	
 	<script src="js/libs/modernizr-2.0.6.min.js"></script>
 </head>
 <body>
@@ -33,16 +35,19 @@
 	<div id="background">
 		<a href="#" class="application-link" title="Go back to timestamp">&laquo; back to timestamp ...</a>
 		<h2>What is it in detail?</h2>
-		Every programmer who interact with exceptions know the problem. You need a unique code for your exception to determine the it in the whole application. In my opinion a smart concept is to use the unix timestamp from the time of implementation this exception as  a application wide unique code. This is used by some open source projects e.g. <a href="http://typo3.org/" title="TYPO3 - the Enterprise Open Source CMS">TYPO3</a> and <a href="http://flow3.typo3.org/" title="FLOW3 - TYPO3's PHP Application Framework">FLOW3</a>. <a href="https://twitter.com/robertlemke" title="Robert Lemke on Twitter">Robert Lemke</a> described this concept in a <a href="http://buzz.typo3.org/people/robert-lemke/article/exceptional-usefulness/" title="&bdquo;Exceptional usefulness&rdquo; on buzz.typo3.org">blog post</a>.
+		Every programmer who interact with exceptions know the problem. You need a unique number for your exception to determine it in the whole application. In my opinion a smart concept is to use the unix timestamp from the time of implementation this exception as a application wide unique number. This is used by some open source projects e.g. <a href="http://typo3.org/" title="TYPO3 - the Enterprise Open Source CMS">TYPO3</a> and <a href="http://flow3.typo3.org/" title="FLOW3 - TYPO3's PHP Application Framework">FLOW3</a>. <a href="https://twitter.com/robertlemke" title="Robert Lemke on Twitter">Robert Lemke</a> described this concept in a <a href="http://buzz.typo3.org/people/robert-lemke/article/exceptional-usefulness/" title="&bdquo;Exceptional usefulness&rdquo; on buzz.typo3.org">blog post</a>.
 		<h2>Why you create this?</h2>
-		Because every time i need a timestamp i start to create a single file which returns the current timestamp. Every time i waste time for the same thing. To do the same could be boring ;) And of course is this a little finger exercise and playground for myself to try <a href="http://jquery.com/" title="jQuery: The Write Less, Do More, JavaScript Library">JQuery</a> and <a href="http://html5boilerplate.com/" title="HTML5 Boilerplate - A rock-solid default template for HTML5 awesome.">HTML5Boilerplate</a>.
+		Because every time i need a timestamp i create a single file which returns the current time as one number. Every time i waste time for the same thing. To do the same could be boring ;) And of course is this a little finger exercise and playground for myself to try <a href="http://jquery.com/" title="jQuery: The Write Less, Do More, JavaScript Library">JQuery</a> and <a href="http://html5boilerplate.com/" title="HTML5 Boilerplate - A rock-solid default template for HTML5 awesome.">HTML5Boilerplate</a>.
 		<h2>Why a client side timestamp?</h2>
 		To create the possibility to use it <a href="files/exceptionStamp.zip" title="Get the offline version of ExceptionStamp">offline</a> and without a webserver.
 		<h2>Who built it?</h2>
 		Andy Grunwald, <a href="http://andygrunwald.com/" title="AndyGrunwald.com">andygrunwald.com</a>
 	</div>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.4.min.js"><\/script>')</script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js"></script>
+	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.4.js"><\/script>')</script>
+
+	<!-- scripts concatenated and minified via ant build script-->
 	<script defer src="js/ExceptionStamp.js"></script>
+	<!-- end scripts-->
 </body>
 </html>
