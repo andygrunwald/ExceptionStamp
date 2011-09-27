@@ -4,16 +4,11 @@ ExceptionStamp = {
 		this.options = options;
 		
 		if($(location).attr("hash") == this.options.backgroundHash) {
-			e = {
-				'data': {
-					'pObj': this
-				}
-			};
-			this.showBackgroundInformation(e);
+			this.showBackgroundInformation();
 		}
 		
-		$(this.options.backgroundLinkCls).click({'pObj': this}, this.showBackgroundInformation);
-		$(this.options.applicationLinkCls).click({'pObj': this}, this.hideBackgroundInformation);
+		$(this.options.backgroundLinkCls).click($.proxy(this.showBackgroundInformation, this));
+		$(this.options.applicationLinkCls).click($.proxy(this.hideBackgroundInformation, this));
 
 		return this;
 	},
@@ -22,14 +17,14 @@ ExceptionStamp = {
 		return this;
 	},
 	showBackgroundInformation: function(e) {
-		$(location).attr("hash", e.data.pObj.options.backgroundHash);
-		$(e.data.pObj.options.applicationId).hide();
-		$(e.data.pObj.options.backgroundId).show();
+		$(location).attr("hash", this.options.backgroundHash);
+		$(this.options.applicationId).hide();
+		$(this.options.backgroundId).show();
 	},
 	hideBackgroundInformation: function(e) {
 		$(location).attr("hash", '#');
-		$(e.data.pObj.options.applicationId).show();
-		$(e.data.pObj.options.backgroundId).hide();
+		$(this.options.applicationId).show();
+		$(this.options.backgroundId).hide();
 	}
 };
 
