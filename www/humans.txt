@@ -1,0 +1,19 @@
+/* TEAM */
+  Name: Andy Grunwald
+  Site: http://andygrunwald.com/
+  Twitter: https://twitter.com/andygrunwald
+  Location: Duisburg, Germany
+
+/* THANKS */
+  Name: HTML5Boilerplate Team
+  URL: http://html5boilerplate.com/
+
+  Name: JQuery Team
+  URL: http://jquery.com/
+
+  Name: Modenizr Team
+  URL: http://www.modernizr.com/
+
+/* SITE */
+  Language: English
+  Doctype: HTML5
