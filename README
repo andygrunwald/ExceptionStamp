@@ -6,9 +6,3 @@
 /* DEPLOY INFORMATION */
   To deploy this project you have to execute the build script (in build/):
     ant build
-  and after this you must zip the following files for the offline version
-    /index.html
-    /humans.txt
-    /css/minified file
-    /js/minified file
-  and drop this zip into /download/exceptionStamp.zip
