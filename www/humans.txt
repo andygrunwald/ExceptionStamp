@@ -26,3 +26,5 @@
 /* SITE */
   Language: English
   Doctype: HTML5
+  Version: 1.0.1
+  Launch: 2011-09-30
