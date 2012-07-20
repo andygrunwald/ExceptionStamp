@@ -1,8 +1,0 @@
-/* USEFUL INFORMATION */
-  This project is build on HTML5Boilerplate.
-  We make use of this build script. Have short look into build/.
-  In vendor/ we have a original copy of HTML5Boilerplate version 2.
-
-/* DEPLOY INFORMATION */
-  To deploy this project you have to execute the build script (in build/):
-    ant build
