@@ -35,11 +35,15 @@
 	<div id="background">
 		<a href="#" class="application-link" title="Go back to timestamp">&laquo; back to timestamp ...</a>
 		<h2>What is it in detail?</h2>
-		Every programmer who interact with exceptions know the problem. You need a unique number for your exception to determine it in the whole application. In my opinion a smart concept is to use the unix timestamp from the time of implementation this exception as a application wide unique number. This is used by some open source projects e.g. <a href="http://typo3.org/" title="TYPO3 - the Enterprise Open Source CMS">TYPO3</a> and <a href="http://flow3.typo3.org/" title="FLOW3 - TYPO3's PHP Application Framework">FLOW3</a>. <a href="https://twitter.com/robertlemke" title="Robert Lemke on Twitter">Robert Lemke</a> described this concept in a <a href="http://buzz.typo3.org/people/robert-lemke/article/exceptional-usefulness/" title="&bdquo;Exceptional usefulness&rdquo; on buzz.typo3.org">blog post</a>.
-		<h2>Why you create this?</h2>
-		Because every time i need a timestamp i create a single file which returns the current time as one number. Every time i waste time for the same thing. To do the same could be boring ;) And of course is this a little finger exercise and playground for myself to try <a href="http://jquery.com/" title="jQuery: The Write Less, Do More, JavaScript Library">JQuery</a> and <a href="http://html5boilerplate.com/" title="HTML5 Boilerplate - A rock-solid default template for HTML5 awesome.">HTML5Boilerplate</a>.
-		<h2>Why a client side timestamp?</h2>
-		To create the possibility to use it offline and without a webserver.
+		Every developer who interacts with <a href="https://en.wikipedia.org/wiki/Exception_handling" title="Exception handling">exceptions</a> knows the problem: You need a unique number for your exception to determine it in the whole application.
+
+		A smart concept is to use the <a href="https://en.wikipedia.org/wiki/Unix_time" title="Unit time">unix timestamp</a> at the time of implementation of the exception as a application wide unique number.
+		This is used by some open source projects e.g. <a href="http://typo3.org/" title="TYPO3 - the Enterprise Open Source CMS">TYPO3</a> and <a href="http://flow.typo3.org/" title="FLOW - TYPO3's PHP Application Framework">FLOW</a>.
+		<a href="https://twitter.com/robertlemke" title="Robert Lemke on Twitter">Robert Lemke</a> described this concept in a blog post: <a href="http://buzz.typo3.org/people/robert-lemke/article/exceptional-usefulness/" title="Exceptional usefulness">Exceptional usefulness</a>.
+
+		<h2>More details?</h2>
+		Get more details at the project page on github: <a href="https://github.com/andygrunwald/ExceptionStamp" title="andygrunwald/ExceptionStamp">andygrunwald/ExceptionStamp</a>
+
 		<h2>Who built it?</h2>
 		Andy Grunwald, <a href="http://andygrunwald.com/" title="AndyGrunwald.com">andygrunwald.com</a>
 	</div>
