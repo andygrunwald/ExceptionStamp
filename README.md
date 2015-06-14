@@ -46,6 +46,23 @@ $ date +%s
 
 See [mwaterfall/alfred-datetime-format-converter](https://github.com/mwaterfall/alfred-datetime-format-converter).
 
+## Is this state of the art development?
+
+In my opinion: Not really, you can do it better.
+
+This project was created in September, 2011.
+The main purpose was to learn something new.
+This was a success.
+Since September 2011 i learned a lot.
+The changes i made in June 2015 are things i learned in the time like:
+
+* Added a license
+* Make a useful README
+* Host this on github pages
+
+I highly recommend to build things if you want to learn something new.
+Get a project and start hacking!
+
 ## Who built it?
 
 Andy Grunwald, [andygrunwald.com](http://andygrunwald.com)
